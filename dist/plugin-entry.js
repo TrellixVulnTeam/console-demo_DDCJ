@@ -10,31 +10,31 @@ window.loadPluginEntry('console-demo@0.0.0',/******/ (() => { // webpackBootstra
 
 var moduleMap = {
 	"exampleNavs": () => {
-		return Promise.all([__webpack_require__.e("webpack_sharing_consume_default_react_react-_b2b8"), __webpack_require__.e("webpack_sharing_consume_default_patternfly_react-core_patternfly_react-core-webpack_sharing_c-17d5ac"), __webpack_require__.e("utils_example-navs_tsx")]).then(() => (() => ((__webpack_require__(/*! ./utils/example-navs */ "./utils/example-navs.tsx")))));
+		return Promise.all([__webpack_require__.e("webpack_sharing_consume_default_react_react-_6301"), __webpack_require__.e("webpack_sharing_consume_default_patternfly_react-core_patternfly_react-core-webpack_sharing_c-17d5ac"), __webpack_require__.e("utils_example-navs_tsx")]).then(() => (() => ((__webpack_require__(/*! ./utils/example-navs */ "./utils/example-navs.tsx")))));
 	},
 	"barUtils": () => {
 		return __webpack_require__.e("utils_bar_ts").then(() => (() => ((__webpack_require__(/*! ./utils/bar */ "./utils/bar.ts")))));
 	},
 	"perspective": () => {
-		return Promise.all([__webpack_require__.e("webpack_sharing_consume_default_react_react-_b2b8"), __webpack_require__.e("utils_perspective_ts")]).then(() => (() => ((__webpack_require__(/*! ./utils/perspective */ "./utils/perspective.ts")))));
+		return Promise.all([__webpack_require__.e("webpack_sharing_consume_default_react_react-_6301"), __webpack_require__.e("utils_perspective_ts")]).then(() => (() => ((__webpack_require__(/*! ./utils/perspective */ "./utils/perspective.ts")))));
 	},
 	"telemetry": () => {
 		return __webpack_require__.e("utils_telemetry_ts").then(() => (() => ((__webpack_require__(/*! ./utils/telemetry */ "./utils/telemetry.ts")))));
 	},
 	"extensionConsumer": () => {
-		return Promise.all([__webpack_require__.e("webpack_sharing_consume_default_react_react-_b2b8"), __webpack_require__.e("webpack_sharing_consume_default_openshift-console_dynamic-plugin-sdk_openshift-console_dynami-71dd47"), __webpack_require__.e("webpack_sharing_consume_default_patternfly_react-core_patternfly_react-core-webpack_sharing_c-17d5ac"), __webpack_require__.e("components_ExtensionConsumer_tsx")]).then(() => (() => ((__webpack_require__(/*! ./components/ExtensionConsumer */ "./components/ExtensionConsumer.tsx")))));
+		return Promise.all([__webpack_require__.e("webpack_sharing_consume_default_react_react-_6301"), __webpack_require__.e("webpack_sharing_consume_default_openshift-console_dynamic-plugin-sdk_openshift-console_dynami-71dd47"), __webpack_require__.e("webpack_sharing_consume_default_patternfly_react-core_patternfly_react-core-webpack_sharing_c-17d5ac"), __webpack_require__.e("components_ExtensionConsumer_tsx")]).then(() => (() => ((__webpack_require__(/*! ./components/ExtensionConsumer */ "./components/ExtensionConsumer.tsx")))));
 	},
 	"utilityConsumer": () => {
-		return Promise.all([__webpack_require__.e("webpack_sharing_consume_default_react_react-_b2b8"), __webpack_require__.e("webpack_sharing_consume_default_openshift-console_dynamic-plugin-sdk_openshift-console_dynami-71dd47"), __webpack_require__.e("webpack_sharing_consume_default_patternfly_react-core_patternfly_react-core-webpack_sharing_c-17d5ac"), __webpack_require__.e("components_UtilityConsumer_tsx")]).then(() => (() => ((__webpack_require__(/*! ./components/UtilityConsumer */ "./components/UtilityConsumer.tsx")))));
+		return Promise.all([__webpack_require__.e("webpack_sharing_consume_default_react_react-_6301"), __webpack_require__.e("webpack_sharing_consume_default_openshift-console_dynamic-plugin-sdk_openshift-console_dynami-71dd47"), __webpack_require__.e("webpack_sharing_consume_default_patternfly_react-core_patternfly_react-core-webpack_sharing_c-17d5ac"), __webpack_require__.e("components_UtilityConsumer_tsx")]).then(() => (() => ((__webpack_require__(/*! ./components/UtilityConsumer */ "./components/UtilityConsumer.tsx")))));
 	},
 	"exampleProxyPage": () => {
-		return Promise.all([__webpack_require__.e("webpack_sharing_consume_default_react_react-_b2b8"), __webpack_require__.e("webpack_sharing_consume_default_openshift-console_dynamic-plugin-sdk_openshift-console_dynami-71dd47"), __webpack_require__.e("webpack_sharing_consume_default_patternfly_react-core_patternfly_react-core-webpack_sharing_c-17d5ac"), __webpack_require__.e("components_ExampleProxyPage_tsx")]).then(() => (() => ((__webpack_require__(/*! ./components/ExampleProxyPage */ "./components/ExampleProxyPage.tsx")))));
+		return Promise.all([__webpack_require__.e("webpack_sharing_consume_default_react_react-_6301"), __webpack_require__.e("webpack_sharing_consume_default_openshift-console_dynamic-plugin-sdk_openshift-console_dynami-71dd47"), __webpack_require__.e("webpack_sharing_consume_default_patternfly_react-core_patternfly_react-core-webpack_sharing_c-17d5ac"), __webpack_require__.e("components_ExampleProxyPage_tsx")]).then(() => (() => ((__webpack_require__(/*! ./components/ExampleProxyPage */ "./components/ExampleProxyPage.tsx")))));
 	},
 	"navPage": () => {
-		return Promise.all([__webpack_require__.e("webpack_sharing_consume_default_react_react-_b2b8"), __webpack_require__.e("webpack_sharing_consume_default_openshift-console_dynamic-plugin-sdk_openshift-console_dynami-71dd47"), __webpack_require__.e("components_Nav_tsx")]).then(() => (() => ((__webpack_require__(/*! ./components/Nav */ "./components/Nav.tsx")))));
+		return Promise.all([__webpack_require__.e("webpack_sharing_consume_default_react_react-_6301"), __webpack_require__.e("webpack_sharing_consume_default_openshift-console_dynamic-plugin-sdk_openshift-console_dynami-71dd47"), __webpack_require__.e("components_Nav_tsx")]).then(() => (() => ((__webpack_require__(/*! ./components/Nav */ "./components/Nav.tsx")))));
 	},
 	"listPage": () => {
-		return Promise.all([__webpack_require__.e("webpack_sharing_consume_default_react_react-_b2b8"), __webpack_require__.e("webpack_sharing_consume_default_openshift-console_dynamic-plugin-sdk_openshift-console_dynami-71dd47"), __webpack_require__.e("components_ListPage_tsx")]).then(() => (() => ((__webpack_require__(/*! ./components/ListPage */ "./components/ListPage.tsx")))));
+		return Promise.all([__webpack_require__.e("webpack_sharing_consume_default_react_react-_6301"), __webpack_require__.e("webpack_sharing_consume_default_openshift-console_dynamic-plugin-sdk_openshift-console_dynami-71dd47"), __webpack_require__.e("components_ListPage_tsx")]).then(() => (() => ((__webpack_require__(/*! ./components/ListPage */ "./components/ListPage.tsx")))));
 	}
 };
 var get = (module, getScope) => {
@@ -259,9 +259,9 @@ __webpack_require__.d(exports, {
 /******/ 			switch(name) {
 /******/ 				case "default": {
 /******/ 					register("@openshift-console/dynamic-plugin-sdk", "0.0.3", () => (__webpack_require__.e("vendors-node_modules_openshift-console_dynamic-plugin-sdk_lib_lib-core_js").then(() => (() => (__webpack_require__(/*! ../node_modules/@openshift-console/dynamic-plugin-sdk/lib/lib-core.js */ "../node_modules/@openshift-console/dynamic-plugin-sdk/lib/lib-core.js"))))));
-/******/ 					register("@patternfly/react-core", "4.162.2", () => (Promise.all([__webpack_require__.e("vendors-node_modules_patternfly_react-core_dist_esm_index_js"), __webpack_require__.e("webpack_sharing_consume_default_react_react-_b2b8"), __webpack_require__.e("webpack_sharing_consume_default_react_react-webpack_sharing_consume_default_react_react")]).then(() => (() => (__webpack_require__(/*! ../node_modules/@patternfly/react-core/dist/esm/index.js */ "../node_modules/@patternfly/react-core/dist/esm/index.js"))))));
-/******/ 					register("react-i18next", "11.12.0", () => (Promise.all([__webpack_require__.e("vendors-node_modules_react-i18next_dist_es_index_js"), __webpack_require__.e("webpack_sharing_consume_default_react_react-_83cc")]).then(() => (() => (__webpack_require__(/*! ../node_modules/react-i18next/dist/es/index.js */ "../node_modules/react-i18next/dist/es/index.js"))))));
-/******/ 					register("react", "17.0.1", () => (Promise.all([__webpack_require__.e("vendors-node_modules_react_index_js"), __webpack_require__.e("node_modules_object-assign_index_js")]).then(() => (() => (__webpack_require__(/*! ../node_modules/react/index.js */ "../node_modules/react/index.js"))))));
+/******/ 					register("@patternfly/react-core", "4.121.1", () => (Promise.all([__webpack_require__.e("vendors-node_modules_patternfly_react-core_dist_esm_index_js"), __webpack_require__.e("webpack_sharing_consume_default_react_react-webpack_sharing_consume_default_react_react-webpa-dbb91f")]).then(() => (() => (__webpack_require__(/*! ../node_modules/@patternfly/react-core/dist/esm/index.js */ "../node_modules/@patternfly/react-core/dist/esm/index.js"))))));
+/******/ 					register("react-i18next", "11.14.2", () => (Promise.all([__webpack_require__.e("vendors-node_modules_react-i18next_dist_es_index_js"), __webpack_require__.e("webpack_sharing_consume_default_react_react-_83cc")]).then(() => (() => (__webpack_require__(/*! ../node_modules/react-i18next/dist/es/index.js */ "../node_modules/react-i18next/dist/es/index.js"))))));
+/******/ 					register("react", "17.0.2", () => (Promise.all([__webpack_require__.e("vendors-node_modules_react_index_js"), __webpack_require__.e("node_modules_object-assign_index_js")]).then(() => (() => (__webpack_require__(/*! ../node_modules/react/index.js */ "../node_modules/react/index.js"))))));
 /******/ 				}
 /******/ 				break;
 /******/ 			}
@@ -416,25 +416,19 @@ __webpack_require__.d(exports, {
 /******/ 		});
 /******/ 		var installedModules = {};
 /******/ 		var moduleToHandlerMapping = {
-/******/ 			"webpack/sharing/consume/default/react/react?b2b8": () => (loadSingletonVersionCheckFallback("default", "react", [4,17,0,1], () => (Promise.all([__webpack_require__.e("vendors-node_modules_react_index_js"), __webpack_require__.e("node_modules_object-assign_index_js")]).then(() => (() => (__webpack_require__(/*! react */ "../node_modules/react/index.js"))))))),
+/******/ 			"webpack/sharing/consume/default/react/react?6301": () => (loadSingletonVersionCheckFallback("default", "react", [1,17,0,1], () => (Promise.all([__webpack_require__.e("vendors-node_modules_react_index_js"), __webpack_require__.e("node_modules_object-assign_index_js")]).then(() => (() => (__webpack_require__(/*! react */ "../node_modules/react/index.js"))))))),
+/******/ 			"webpack/sharing/consume/default/react-i18next/react-i18next": () => (loadSingletonVersionCheckFallback("default", "react-i18next", [1,11,11,4], () => (Promise.all([__webpack_require__.e("vendors-node_modules_react-i18next_dist_es_index_js"), __webpack_require__.e("webpack_sharing_consume_default_react_react-_83cc")]).then(() => (() => (__webpack_require__(/*! react-i18next */ "../node_modules/react-i18next/dist/es/index.js"))))))),
+/******/ 			"webpack/sharing/consume/default/@patternfly/react-core/@patternfly/react-core": () => (loadSingletonVersionCheckFallback("default", "@patternfly/react-core", [4,4,121,1], () => (Promise.all([__webpack_require__.e("vendors-node_modules_patternfly_react-core_dist_esm_index_js"), __webpack_require__.e("webpack_sharing_consume_default_react_react-webpack_sharing_consume_default_react_react-webpa-dbb91f")]).then(() => (() => (__webpack_require__(/*! @patternfly/react-core */ "../node_modules/@patternfly/react-core/dist/esm/index.js"))))))),
+/******/ 			"webpack/sharing/consume/default/@openshift-console/dynamic-plugin-sdk/@openshift-console/dynamic-plugin-sdk": () => (loadSingletonVersionCheckFallback("default", "@openshift-console/dynamic-plugin-sdk", [4,0,0,3], () => (__webpack_require__.e("vendors-node_modules_openshift-console_dynamic-plugin-sdk_lib_lib-core_js").then(() => (() => (__webpack_require__(/*! @openshift-console/dynamic-plugin-sdk */ "../node_modules/@openshift-console/dynamic-plugin-sdk/lib/lib-core.js"))))))),
 /******/ 			"webpack/sharing/consume/default/react/react?2f5c": () => (loadSingletonVersionCheckFallback("default", "react", [,[1,17,0,0],[1,16,8,0],1], () => (__webpack_require__.e("vendors-node_modules_react_index_js").then(() => (() => (__webpack_require__(/*! react */ "../node_modules/react/index.js"))))))),
+/******/ 			"webpack/sharing/consume/default/react/react?7071": () => (loadSingletonVersionCheckFallback("default", "react", [4,17,0,2], () => (__webpack_require__.e("vendors-node_modules_react_index_js").then(() => (() => (__webpack_require__(/*! react */ "../node_modules/react/index.js"))))))),
 /******/ 			"webpack/sharing/consume/default/react/react?8260": () => (loadSingletonVersionCheckFallback("default", "react", [0,0,14,0], () => (__webpack_require__.e("vendors-node_modules_react_index_js").then(() => (() => (__webpack_require__(/*! react */ "../node_modules/react/index.js"))))))),
-/******/ 			"webpack/sharing/consume/default/react/react?83cc": () => (loadSingletonVersionCheckFallback("default", "react", [,[4,16,8,0],[0],2], () => (Promise.all([__webpack_require__.e("vendors-node_modules_react_index_js"), __webpack_require__.e("node_modules_object-assign_index_js")]).then(() => (() => (__webpack_require__(/*! react */ "../node_modules/react/index.js"))))))),
-/******/ 			"webpack/sharing/consume/default/react-i18next/react-i18next": () => (loadSingletonVersionCheckFallback("default", "react-i18next", [1,11,7,3], () => (Promise.all([__webpack_require__.e("vendors-node_modules_react-i18next_dist_es_index_js"), __webpack_require__.e("webpack_sharing_consume_default_react_react-_83cc")]).then(() => (() => (__webpack_require__(/*! react-i18next */ "../node_modules/react-i18next/dist/es/index.js"))))))),
-/******/ 			"webpack/sharing/consume/default/@patternfly/react-core/@patternfly/react-core": () => (loadSingletonVersionCheckFallback("default", "@patternfly/react-core", [4,4,162,2], () => (Promise.all([__webpack_require__.e("vendors-node_modules_patternfly_react-core_dist_esm_index_js"), __webpack_require__.e("webpack_sharing_consume_default_react_react-webpack_sharing_consume_default_react_react")]).then(() => (() => (__webpack_require__(/*! @patternfly/react-core */ "../node_modules/@patternfly/react-core/dist/esm/index.js"))))))),
-/******/ 			"webpack/sharing/consume/default/@openshift-console/dynamic-plugin-sdk/@openshift-console/dynamic-plugin-sdk": () => (loadSingletonVersionCheckFallback("default", "@openshift-console/dynamic-plugin-sdk", [4,0,0,3], () => (__webpack_require__.e("vendors-node_modules_openshift-console_dynamic-plugin-sdk_lib_lib-core_js").then(() => (() => (__webpack_require__(/*! @openshift-console/dynamic-plugin-sdk */ "../node_modules/@openshift-console/dynamic-plugin-sdk/lib/lib-core.js")))))))
+/******/ 			"webpack/sharing/consume/default/react/react?83cc": () => (loadSingletonVersionCheckFallback("default", "react", [,[4,16,8,0],[0],2], () => (Promise.all([__webpack_require__.e("vendors-node_modules_react_index_js"), __webpack_require__.e("node_modules_object-assign_index_js")]).then(() => (() => (__webpack_require__(/*! react */ "../node_modules/react/index.js")))))))
 /******/ 		};
 /******/ 		// no consumes in initial chunks
 /******/ 		var chunkMapping = {
-/******/ 			"webpack_sharing_consume_default_react_react-_b2b8": [
-/******/ 				"webpack/sharing/consume/default/react/react?b2b8"
-/******/ 			],
-/******/ 			"webpack_sharing_consume_default_react_react-webpack_sharing_consume_default_react_react": [
-/******/ 				"webpack/sharing/consume/default/react/react?2f5c",
-/******/ 				"webpack/sharing/consume/default/react/react?8260"
-/******/ 			],
-/******/ 			"webpack_sharing_consume_default_react_react-_83cc": [
-/******/ 				"webpack/sharing/consume/default/react/react?83cc"
+/******/ 			"webpack_sharing_consume_default_react_react-_6301": [
+/******/ 				"webpack/sharing/consume/default/react/react?6301"
 /******/ 			],
 /******/ 			"webpack_sharing_consume_default_patternfly_react-core_patternfly_react-core-webpack_sharing_c-17d5ac": [
 /******/ 				"webpack/sharing/consume/default/react-i18next/react-i18next",
@@ -442,6 +436,14 @@ __webpack_require__.d(exports, {
 /******/ 			],
 /******/ 			"webpack_sharing_consume_default_openshift-console_dynamic-plugin-sdk_openshift-console_dynami-71dd47": [
 /******/ 				"webpack/sharing/consume/default/@openshift-console/dynamic-plugin-sdk/@openshift-console/dynamic-plugin-sdk"
+/******/ 			],
+/******/ 			"webpack_sharing_consume_default_react_react-webpack_sharing_consume_default_react_react-webpa-dbb91f": [
+/******/ 				"webpack/sharing/consume/default/react/react?2f5c",
+/******/ 				"webpack/sharing/consume/default/react/react?7071",
+/******/ 				"webpack/sharing/consume/default/react/react?8260"
+/******/ 			],
+/******/ 			"webpack_sharing_consume_default_react_react-_83cc": [
+/******/ 				"webpack/sharing/consume/default/react/react?83cc"
 /******/ 			]
 /******/ 		};
 /******/ 		__webpack_require__.f.consumes = (chunkId, promises) => {
@@ -493,7 +495,7 @@ __webpack_require__.d(exports, {
 /******/ 					if(installedChunkData) {
 /******/ 						promises.push(installedChunkData[2]);
 /******/ 					} else {
-/******/ 						if(!/^webpack_sharing_consume_default_(react_react\-(_83cc|_b2b8|webpack_sharing_consume_default_react_react)|openshift\-console_dynamic\-plugin\-sdk_openshift\-console_dynami\-71dd47|patternfly_react\-core_patternfly_react\-core\-webpack_sharing_c\-17d5ac)$/.test(chunkId)) {
+/******/ 						if(!/^webpack_sharing_consume_default_(react_react\-(_6301|_83cc|webpack_sharing_consume_default_react_react\-webpa\-dbb91f)|openshift\-console_dynamic\-plugin\-sdk_openshift\-console_dynami\-71dd47|patternfly_react\-core_patternfly_react\-core\-webpack_sharing_c\-17d5ac)$/.test(chunkId)) {
 /******/ 							// setup Promise in chunk cache
 /******/ 							var promise = new Promise((resolve, reject) => (installedChunkData = installedChunks[chunkId] = [resolve, reject]));
 /******/ 							promises.push(installedChunkData[2] = promise);
