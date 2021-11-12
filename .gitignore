@@ -1,4 +1,0 @@
-node_modules
-dist
-.cache-loader
-cypress/cypress-a11y-report.json

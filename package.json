@@ -1,30 +1,16 @@
 {
-  "name": "odf-console",
+  "name": "console-demo",
   "version": "0.0.0",
-  "description": "ODF console",
+  "description": "console-demo",
   "main": "index.js",
-  "author": "bipuladh <badhikar@redhat.com>",
-  "license": "MIT",
   "private": true,
-  "repository": "git@github.com:red-hat-storage/odf-console.git",
   "scripts": {
     "clean": "rm -rf ./dist",
-    "cypress-merge": "mochawesome-merge ./gui-test-screenshots/cypress_report*.json > ./gui-test-screenshots/cypress.json",
-    "cypress-generate": "marge -o ./gui-test-screenshots/ -f cypress-report -t 'OpenShift Console Cypress Test Results' -p 'OpenShift Cypress Test Results' --showPassed false --assetsDir ./gui-test-screenshots/cypress/assets ./gui-test-screenshots/cypress.json",
-    "cypress-postreport": "yarn cypress-merge && yarn cypress-generate",
-    "test-cypress": "node_modules/.bin/cypress open --config-file ./cypress/cypress.json --env openshift=true",
-    "test-cypress-headless": "node --max-old-space-size=4096 node_modules/.bin/cypress run --config-file ./cypress/cypress.json --env openshift=true --browser ${BRIDGE_E2E_BROWSER_NAME:=chrome} --headless",
     "build": "yarn clean && NODE_ENV=production yarn ts-node ./node_modules/.bin/webpack",
     "build-dev": "yarn clean && yarn ts-node ./node_modules/.bin/webpack",
     "dev": "yarn clean && yarn ts-node ./node_modules/.bin/webpack serve",
     "http-server": "./http-server.sh ./dist",
-    "ts-node": "ts-node -O '{\"module\":\"commonjs\"}' -I '/node_modules/(?!(@console)/)/'",
-    "lint-css": "yarn stylelint src/**/**/*.scss",
-    "lint-css-fix": "yarn stylelint src/**/**/*.scss --fix",
-    "lint": "yarn eslint --ext .ts,.tsx ./src/ && yarn lint-css",
-    "lint-fix": "yarn eslint --fix --ext .ts,.tsx ./src/ && yarn lint-css-fix",
-    "prepare": "husky install",
-    "i18n": "i18next \"src/**/*.{js,ts,tsx}\" [-oc] -c i18next-parser.config.js"
+    "ts-node": "ts-node -O '{\"module\":\"commonjs\"}' -I '/node_modules/(?!(@console)/)/'"
   },
   "dependencies": {
     "@patternfly/patternfly": "4.103.6",
@@ -42,7 +28,6 @@
     "react-router-dom": "5.2.0"
   },
   "devDependencies": {
-    "@cypress/webpack-preprocessor": "^5.9.1",
     "@openshift-console/dynamic-plugin-sdk": "0.0.2",
     "@openshift-console/dynamic-plugin-sdk-webpack": "0.0.2",
     "@openshift-console/dynamic-plugin-sdk-internal": "0.0.2",
@@ -58,12 +43,9 @@
     "comment-json": "4.x",
     "copy-webpack-plugin": "^6.4.1",
     "css-loader": "0.28.x",
-    "cypress": "^8.3.1",
-    "cypress-multi-reporters": "^1.5.0",
     "eslint": "^7.31.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-chai-friendly": "^0.7.2",
-    "eslint-plugin-cypress": "^2.11.3",
     "eslint-plugin-import": "^2.23.4",
     "eslint-plugin-jsx-a11y": "^6.4.1",
     "eslint-plugin-react": "^7.24.0",
@@ -97,16 +79,23 @@
     "webpack-dev-server": "^3.11.2"
   },
   "consolePlugin": {
-    "name": "odf-console",
+    "name": "console-demo",
     "version": "0.0.0",
-    "displayName": "ODF(OpenShift Data Foundation) Plugin",
+    "displayName": "Demo Console Plugin",
     "description": "Console plugin for ODF",
     "dependencies": {
       "@console/pluginAPI": "*"
     },
     "exposedModules": {
-      "dashboard": "./components/odf-dashboard/dashboard",
-      "features": "./features"
+      "exampleNavs": "./utils/example-navs",
+      "barUtils": "./utils/bar",
+      "perspective": "./utils/perspective",
+      "telemetry": "./utils/telemetry",
+      "extensionConsumer": "./components/ExtensionConsumer",
+      "utilityConsumer": "./components/UtilityConsumer",
+      "exampleProxyPage": "./components/ExampleProxyPage",
+      "navPage": "./components/Nav",
+      "listPage": "./components/ListPage"
     }
   }
 }

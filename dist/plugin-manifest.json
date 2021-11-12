@@ -1,0 +1,285 @@
+{
+  "name": "console-demo",
+  "version": "0.0.0",
+  "displayName": "Demo Console Plugin",
+  "description": "Console plugin for ODF",
+  "dependencies": {
+    "@console/pluginAPI": "*"
+  },
+  "extensions": [
+    {
+      "type": "console.flag",
+      "properties": {
+        "handler": {
+          "$codeRef": "barUtils.testHandler"
+        }
+      }
+    },
+    {
+      "type": "console.flag/model",
+      "properties": {
+        "flag": "EXAMPLE",
+        "model": {
+          "group": "kubevirt.io",
+          "version": "v1alpha3",
+          "kind": "ExampleModel"
+        }
+      }
+    },
+    {
+      "type": "console.telemetry/listener",
+      "properties": {
+        "listener": {
+          "$codeRef": "telemetry.eventListener"
+        }
+      }
+    },
+    {
+      "type": "console.perspective",
+      "properties": {
+        "id": "demo",
+        "name": "Demo",
+        "icon": {
+          "$codeRef": "perspective.icon"
+        },
+        "landingPageURL": {
+          "$codeRef": "perspective.getLandingPageURL"
+        },
+        "importRedirectURL": {
+          "$codeRef": "perspective.getImportRedirectURL"
+        }
+      }
+    },
+    {
+      "type": "console.navigation/section",
+      "properties": {
+        "id": "admin-demo-section",
+        "perspective": "admin",
+        "name": "Demo Plugin"
+      }
+    },
+    {
+      "type": "console.navigation/section",
+      "properties": {
+        "id": "dev-demo-section",
+        "perspective": "dev",
+        "name": "Demo Plugin"
+      }
+    },
+    {
+      "type": "console.page/route",
+      "properties": {
+        "path": "/example/nav",
+        "component": {
+          "$codeRef": "navPage"
+        }
+      }
+    },
+    {
+      "type": "console.page/route",
+      "properties": {
+        "exact": true,
+        "path": [
+          "/dynamic-route-1"
+        ],
+        "component": {
+          "$codeRef": "exampleNavs.DynamicPage1"
+        }
+      }
+    },
+    {
+      "type": "console.page/route",
+      "properties": {
+        "path": "/test-proxy-service",
+        "component": {
+          "$codeRef": "exampleProxyPage.default"
+        }
+      }
+    },
+    {
+      "type": "console.navigation/href",
+      "properties": {
+        "id": "admin-dynamic-route-1",
+        "perspective": "admin",
+        "section": "admin-demo-section",
+        "name": "Dynamic Nav 1",
+        "href": "/dynamic-route-1"
+      }
+    },
+    {
+      "type": "console.navigation/href",
+      "properties": {
+        "id": "dev-dynamic-route-1",
+        "perspective": "dev",
+        "section": "dev-demo-section",
+        "name": "Dynamic Nav 1",
+        "href": "/dynamic-route-1"
+      }
+    },
+    {
+      "type": "console.navigation/href",
+      "properties": {
+        "id": "demo-dynamic-route-1",
+        "perspective": "demo",
+        "name": "Dynamic Nav 1",
+        "href": "/dynamic-route-1"
+      }
+    },
+    {
+      "type": "console.page/route",
+      "properties": {
+        "exact": true,
+        "path": [
+          "/dynamic-route-2"
+        ],
+        "component": {
+          "$codeRef": "exampleNavs.DynamicPage2"
+        }
+      }
+    },
+    {
+      "type": "console.navigation/href",
+      "properties": {
+        "id": "admin-dynamic-route-2",
+        "perspective": "admin",
+        "section": "admin-demo-section",
+        "name": "Dynamic Nav 2",
+        "href": "/dynamic-route-2"
+      }
+    },
+    {
+      "type": "console.navigation/href",
+      "properties": {
+        "id": "dev-dynamic-route-2",
+        "perspective": "dev",
+        "section": "dev-demo-section",
+        "name": "Dynamic Nav 2",
+        "href": "/dynamic-route-2"
+      }
+    },
+    {
+      "type": "console.navigation/href",
+      "properties": {
+        "id": "demo-dynamic-route-2",
+        "perspective": "demo",
+        "name": "Dynamic Nav 2",
+        "href": "/dynamic-route-2"
+      }
+    },
+    {
+      "type": "console.page/route",
+      "properties": {
+        "path": "/test-consumer",
+        "component": {
+          "$codeRef": "extensionConsumer.default"
+        }
+      }
+    },
+    {
+      "type": "console.navigation/href",
+      "properties": {
+        "id": "admin-test-consumer",
+        "perspective": "admin",
+        "section": "admin-demo-section",
+        "name": "Test Consumer",
+        "href": "/test-consumer"
+      }
+    },
+    {
+      "type": "console.navigation/href",
+      "properties": {
+        "id": "dev-test-consumer",
+        "perspective": "dev",
+        "section": "dev-demo-section",
+        "name": "Test Consumer",
+        "href": "/test-consumer"
+      }
+    },
+    {
+      "type": "console.navigation/href",
+      "properties": {
+        "id": "demo-test-consumer",
+        "perspective": "demo",
+        "name": "Test Consumer",
+        "href": "/test-consumer"
+      }
+    },
+    {
+      "type": "console.page/route",
+      "properties": {
+        "path": "/test-utility-consumer",
+        "component": {
+          "$codeRef": "utilityConsumer.default"
+        }
+      }
+    },
+    {
+      "type": "console.navigation/href",
+      "properties": {
+        "id": "admin-test-utility-consumer",
+        "perspective": "admin",
+        "section": "admin-demo-section",
+        "name": "Test Utilities",
+        "href": "/test-utility-consumer"
+      }
+    },
+    {
+      "type": "console.navigation/href",
+      "properties": {
+        "id": "dev-test-utility-consumer",
+        "perspective": "dev",
+        "section": "dev-demo-section",
+        "name": "Test Utilities",
+        "href": "/test-utility-consumer"
+      }
+    },
+    {
+      "type": "console.navigation/href",
+      "properties": {
+        "id": "demo-test-utility-consumer",
+        "perspective": "demo",
+        "name": "Test Utilities",
+        "href": "/test-utility-consumer"
+      }
+    },
+    {
+      "type": "console.navigation/href",
+      "properties": {
+        "id": "test-list-page",
+        "perspective": "admin",
+        "section": "admin-demo-section",
+        "name": "List Page",
+        "href": "/demo-list-page"
+      },
+      "flags": {
+        "required": [
+          "OPENSHIFT"
+        ]
+      }
+    },
+    {
+      "type": "console.page/route",
+      "properties": {
+        "path": "/demo-list-page",
+        "component": {
+          "$codeRef": "listPage"
+        }
+      }
+    },
+    {
+      "type": "console.navigation/href",
+      "properties": {
+        "id": "test-k8s-api",
+        "perspective": "admin",
+        "section": "admin-demo-section",
+        "name": "K8s API",
+        "href": "/test-k8sapi"
+      },
+      "flags": {
+        "required": [
+          "OPENSHIFT"
+        ]
+      }
+    }
+  ]
+}
