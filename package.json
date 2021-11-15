@@ -30,6 +30,7 @@
   "devDependencies": {
     "@openshift-console/dynamic-plugin-sdk": "0.0.3",
     "@openshift-console/dynamic-plugin-sdk-webpack": "0.0.3",
+    "@openshift-console/dynamic-plugin-sdk-internal": "0.0.2",
     "@types/lodash-es": "^4.17.4",
     "@types/node": "^14.14.34",
     "@types/react": "16.8.13",
@@ -87,14 +88,8 @@
     },
     "exposedModules": {
       "exampleNavs": "./utils/example-navs",
-      "barUtils": "./utils/bar",
       "perspective": "./utils/perspective",
-      "telemetry": "./utils/telemetry",
-      "extensionConsumer": "./components/ExtensionConsumer",
-      "utilityConsumer": "./components/UtilityConsumer",
-      "exampleProxyPage": "./components/ExampleProxyPage",
-      "navPage": "./components/Nav",
-      "listPage": "./components/ListPage"
+      "dashboard": "./components/dashboard"
     }
   }
 }

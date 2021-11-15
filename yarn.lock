@@ -607,6 +607,17 @@
     mkdirp "^1.0.4"
     rimraf "^3.0.2"
 
+"@openshift-console/dynamic-plugin-sdk-internal@0.0.2":
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/@openshift-console/dynamic-plugin-sdk-internal/-/dynamic-plugin-sdk-internal-0.0.2.tgz#9fd758dfcb9c0122d1a665f4cc550df69859cc50"
+  integrity sha512-ZBzp4ccsW1xzc7EZOpR0yQdQpowX86hFUQnfMRLLZlhONp97pqkvNFkR6lQ5gky93cdadThMKU9cXFDzC1/jHQ==
+  dependencies:
+    react "^17.0.1"
+    react-helmet "^6.1.0"
+    react-i18next "^11.7.3"
+    react-router "5.2.0"
+    react-router-dom "5.2.0"
+
 "@openshift-console/dynamic-plugin-sdk-webpack@0.0.3":
   version "0.0.3"
   resolved "https://registry.yarnpkg.com/@openshift-console/dynamic-plugin-sdk-webpack/-/dynamic-plugin-sdk-webpack-0.0.3.tgz#edc768dbdcb2d3d07d3ccb5f60c5a5a01b6293b8"

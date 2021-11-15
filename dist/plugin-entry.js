@@ -12,29 +12,11 @@ var moduleMap = {
 	"exampleNavs": () => {
 		return Promise.all([__webpack_require__.e("webpack_sharing_consume_default_react_react-_6301"), __webpack_require__.e("webpack_sharing_consume_default_patternfly_react-core_patternfly_react-core-webpack_sharing_c-17d5ac"), __webpack_require__.e("utils_example-navs_tsx")]).then(() => (() => ((__webpack_require__(/*! ./utils/example-navs */ "./utils/example-navs.tsx")))));
 	},
-	"barUtils": () => {
-		return __webpack_require__.e("utils_bar_ts").then(() => (() => ((__webpack_require__(/*! ./utils/bar */ "./utils/bar.ts")))));
-	},
 	"perspective": () => {
 		return Promise.all([__webpack_require__.e("webpack_sharing_consume_default_react_react-_6301"), __webpack_require__.e("utils_perspective_ts")]).then(() => (() => ((__webpack_require__(/*! ./utils/perspective */ "./utils/perspective.ts")))));
 	},
-	"telemetry": () => {
-		return __webpack_require__.e("utils_telemetry_ts").then(() => (() => ((__webpack_require__(/*! ./utils/telemetry */ "./utils/telemetry.ts")))));
-	},
-	"extensionConsumer": () => {
-		return Promise.all([__webpack_require__.e("webpack_sharing_consume_default_react_react-_6301"), __webpack_require__.e("webpack_sharing_consume_default_openshift-console_dynamic-plugin-sdk_openshift-console_dynami-71dd47"), __webpack_require__.e("webpack_sharing_consume_default_patternfly_react-core_patternfly_react-core-webpack_sharing_c-17d5ac"), __webpack_require__.e("components_ExtensionConsumer_tsx")]).then(() => (() => ((__webpack_require__(/*! ./components/ExtensionConsumer */ "./components/ExtensionConsumer.tsx")))));
-	},
-	"utilityConsumer": () => {
-		return Promise.all([__webpack_require__.e("webpack_sharing_consume_default_react_react-_6301"), __webpack_require__.e("webpack_sharing_consume_default_openshift-console_dynamic-plugin-sdk_openshift-console_dynami-71dd47"), __webpack_require__.e("webpack_sharing_consume_default_patternfly_react-core_patternfly_react-core-webpack_sharing_c-17d5ac"), __webpack_require__.e("components_UtilityConsumer_tsx")]).then(() => (() => ((__webpack_require__(/*! ./components/UtilityConsumer */ "./components/UtilityConsumer.tsx")))));
-	},
-	"exampleProxyPage": () => {
-		return Promise.all([__webpack_require__.e("webpack_sharing_consume_default_react_react-_6301"), __webpack_require__.e("webpack_sharing_consume_default_openshift-console_dynamic-plugin-sdk_openshift-console_dynami-71dd47"), __webpack_require__.e("webpack_sharing_consume_default_patternfly_react-core_patternfly_react-core-webpack_sharing_c-17d5ac"), __webpack_require__.e("components_ExampleProxyPage_tsx")]).then(() => (() => ((__webpack_require__(/*! ./components/ExampleProxyPage */ "./components/ExampleProxyPage.tsx")))));
-	},
-	"navPage": () => {
-		return Promise.all([__webpack_require__.e("webpack_sharing_consume_default_react_react-_6301"), __webpack_require__.e("webpack_sharing_consume_default_openshift-console_dynamic-plugin-sdk_openshift-console_dynami-71dd47"), __webpack_require__.e("components_Nav_tsx")]).then(() => (() => ((__webpack_require__(/*! ./components/Nav */ "./components/Nav.tsx")))));
-	},
-	"listPage": () => {
-		return Promise.all([__webpack_require__.e("webpack_sharing_consume_default_react_react-_6301"), __webpack_require__.e("webpack_sharing_consume_default_openshift-console_dynamic-plugin-sdk_openshift-console_dynami-71dd47"), __webpack_require__.e("components_ListPage_tsx")]).then(() => (() => ((__webpack_require__(/*! ./components/ListPage */ "./components/ListPage.tsx")))));
+	"dashboard": () => {
+		return Promise.all([__webpack_require__.e("webpack_sharing_consume_default_react_react-_6301"), __webpack_require__.e("webpack_sharing_consume_default_patternfly_react-core_patternfly_react-core-webpack_sharing_c-17d5ac"), __webpack_require__.e("components_dashboard_tsx")]).then(() => (() => ((__webpack_require__(/*! ./components/dashboard */ "./components/dashboard.tsx")))));
 	}
 };
 var get = (module, getScope) => {
@@ -434,7 +416,7 @@ __webpack_require__.d(exports, {
 /******/ 				"webpack/sharing/consume/default/react-i18next/react-i18next",
 /******/ 				"webpack/sharing/consume/default/@patternfly/react-core/@patternfly/react-core"
 /******/ 			],
-/******/ 			"webpack_sharing_consume_default_openshift-console_dynamic-plugin-sdk_openshift-console_dynami-71dd47": [
+/******/ 			"components_dashboard_tsx": [
 /******/ 				"webpack/sharing/consume/default/@openshift-console/dynamic-plugin-sdk/@openshift-console/dynamic-plugin-sdk"
 /******/ 			],
 /******/ 			"webpack_sharing_consume_default_react_react-webpack_sharing_consume_default_react_react-webpa-dbb91f": [
@@ -495,7 +477,7 @@ __webpack_require__.d(exports, {
 /******/ 					if(installedChunkData) {
 /******/ 						promises.push(installedChunkData[2]);
 /******/ 					} else {
-/******/ 						if(!/^webpack_sharing_consume_default_(react_react\-(_6301|_83cc|webpack_sharing_consume_default_react_react\-webpa\-dbb91f)|openshift\-console_dynamic\-plugin\-sdk_openshift\-console_dynami\-71dd47|patternfly_react\-core_patternfly_react\-core\-webpack_sharing_c\-17d5ac)$/.test(chunkId)) {
+/******/ 						if(!/^webpack_sharing_consume_default_(react_react\-(_6301|_83cc|webpack_sharing_consume_default_react_react\-webpa\-dbb91f)|patternfly_react\-core_patternfly_react\-core\-webpack_sharing_c\-17d5ac)$/.test(chunkId)) {
 /******/ 							// setup Promise in chunk cache
 /******/ 							var promise = new Promise((resolve, reject) => (installedChunkData = installedChunks[chunkId] = [resolve, reject]));
 /******/ 							promises.push(installedChunkData[2] = promise);

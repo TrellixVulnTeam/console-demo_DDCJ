@@ -4,9 +4,5 @@ import { ExamplePage } from '../components/ExamplePage'
 
 export const DynamicPage1 = () => {
   const { t } = useTranslation('plugin__console-demo');
-  return <ExamplePage title={t('Dynamic Page 1')}/>;
-};
-export const DynamicPage2 = () => {
-  const { t } = useTranslation('plugin__console-demo');
-  return <ExamplePage title={t('Dynamic Page 2')}/>;
+  return <ExamplePage title={t('List of Managed Clusters')}/>;
 };

@@ -35,7 +35,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_test_icon__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../components/test-icon */ "./components/test-icon.tsx");
 
 const icon = { default: _components_test_icon__WEBPACK_IMPORTED_MODULE_0__["default"] };
-const getLandingPageURL = () => '/dynamic-route-1';
+const getLandingPageURL = () => '/all-clusters';
 const getImportRedirectURL = (namespace) => `/k8s/cluster/projects/${namespace}/workloads`;
 
 
