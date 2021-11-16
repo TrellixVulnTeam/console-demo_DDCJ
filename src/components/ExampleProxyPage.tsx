@@ -30,6 +30,12 @@ const ExampleProxyPage: React.FC = () => {
           <ExampleProxyResponse />
           </CardBody>
         </Card>
+        <Card>
+          <CardTitle>{t("Proxy: consoleFetchJSON")}</CardTitle>
+          <CardBody>
+          <ExampleProxyResponseNew />
+          </CardBody>
+        </Card>
       </PageSection>
     </Page>
   );
@@ -40,6 +46,22 @@ const ExampleProxyResponse: React.FC = () => {
 
   React.useEffect(() => {
     consoleFetchJSON('/api/proxy/namespace/openshift-monitoring/service/thanos-querier:9091/api/v1/rules')
+      .then((response) => {
+        setData(response);
+      })
+      .catch((e) => console.error(e));
+  }, []);
+
+  return (
+    <pre>{JSON.stringify(data, null, 2)}</pre>
+  );
+};
+
+const ExampleProxyResponseNew: React.FC = () => {
+  const [data, setData] = React.useState();
+
+  React.useEffect(() => {
+    consoleFetchJSON('/api/proxy/namespace/open-cluster-management-observability/service/rbac-query-proxy:8443/api/v1/rules')
       .then((response) => {
         setData(response);
       })

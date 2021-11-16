@@ -36,6 +36,16 @@
     }
   },
   {
+    "type": "console.navigation/href",
+    "properties": {
+      "id": "dr-data-service-section",
+      "perspective": "acm",
+      "section": "data-service-section",
+      "name": "DR service",
+      "href": "/drproxy"
+    }
+  },
+  {
     "type": "console.page/route",
     "properties": {
       "path": "/all-clusters",
@@ -50,5 +60,13 @@
       "path": "/dashboard",
       "component": { "$codeRef": "dashboard.default" }
     }
+  },
+    {
+      "type": "console.page/route",
+      "properties": {
+        "perspective": "acm",
+        "path": "/drproxy",
+        "component": { "$codeRef": "proxypage.default" }
+      }
   }
 ]

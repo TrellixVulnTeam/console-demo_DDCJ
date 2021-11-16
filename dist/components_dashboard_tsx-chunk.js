@@ -79,7 +79,7 @@ const StatusCard = () => {
                 return "LOADING";
         }
     };
-    const [healthData, healthError, healthLoading] = (0,_utils_use_url_poll__WEBPACK_IMPORTED_MODULE_1__.useURLPoll)('/api/proxy/namespace/openshift-monitoring/service/thanos-querier:9091/api/v1/query?query="odf_system_health_status"');
+    const [healthData, healthError, healthLoading] = (0,_utils_use_url_poll__WEBPACK_IMPORTED_MODULE_1__.useURLPoll)('/api/proxy/namespace/open-cluster-management-observability/service/observability-thanos-query-new:9099/api/v1/query?query=node_network_up');
     const parsedHealthData = !healthError && !healthLoading
         ? healthData.data.result.reduce((acc, curr) => {
             const systemName = curr.metric.storage_system;

@@ -89,7 +89,8 @@
     "exposedModules": {
       "exampleNavs": "./utils/example-navs",
       "perspective": "./utils/perspective",
-      "dashboard": "./components/dashboard"
+      "dashboard": "./components/dashboard",
+      "proxypage": "./components/ExampleProxyPage"
     }
   }
 }

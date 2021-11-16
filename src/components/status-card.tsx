@@ -21,7 +21,7 @@ export const StatusCard: React.FC = () => {
   }
 };
 
-  const [healthData, healthError, healthLoading] = useURLPoll<PrometheusResponse>('/api/proxy/namespace/openshift-monitoring/service/thanos-querier:9091/api/v1/query?query=node_network_up');
+  const [healthData, healthError, healthLoading] = useURLPoll<PrometheusResponse>('/api/proxy/namespace/open-cluster-management-observability/service/rbac-query-proxy:8443/api/v1/query?query=node_network_up');
 
   const parsedHealthData =
   !healthError && !healthLoading

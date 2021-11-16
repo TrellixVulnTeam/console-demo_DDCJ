@@ -88,6 +88,10 @@ spec:
     basePath: '/'
   proxy:
     services:
+      - name: rbac-query-proxy
+        namespace: open-cluster-management-observability
+        port: 8443
+        authorize: true
       - name: thanos-querier
         namespace: openshift-monitoring
         port: 9091

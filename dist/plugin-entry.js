@@ -16,7 +16,10 @@ var moduleMap = {
 		return Promise.all([__webpack_require__.e("webpack_sharing_consume_default_react_react-_6301"), __webpack_require__.e("utils_perspective_ts")]).then(() => (() => ((__webpack_require__(/*! ./utils/perspective */ "./utils/perspective.ts")))));
 	},
 	"dashboard": () => {
-		return Promise.all([__webpack_require__.e("webpack_sharing_consume_default_react_react-_6301"), __webpack_require__.e("webpack_sharing_consume_default_patternfly_react-core_patternfly_react-core-webpack_sharing_c-17d5ac"), __webpack_require__.e("components_dashboard_tsx")]).then(() => (() => ((__webpack_require__(/*! ./components/dashboard */ "./components/dashboard.tsx")))));
+		return Promise.all([__webpack_require__.e("webpack_sharing_consume_default_react_react-_6301"), __webpack_require__.e("webpack_sharing_consume_default_patternfly_react-core_patternfly_react-core-webpack_sharing_c-17d5ac"), __webpack_require__.e("webpack_sharing_consume_default_openshift-console_dynamic-plugin-sdk_openshift-console_dynami-71dd47"), __webpack_require__.e("components_dashboard_tsx")]).then(() => (() => ((__webpack_require__(/*! ./components/dashboard */ "./components/dashboard.tsx")))));
+	},
+	"proxypage": () => {
+		return Promise.all([__webpack_require__.e("webpack_sharing_consume_default_react_react-_6301"), __webpack_require__.e("webpack_sharing_consume_default_patternfly_react-core_patternfly_react-core-webpack_sharing_c-17d5ac"), __webpack_require__.e("webpack_sharing_consume_default_openshift-console_dynamic-plugin-sdk_openshift-console_dynami-71dd47"), __webpack_require__.e("components_ExampleProxyPage_tsx")]).then(() => (() => ((__webpack_require__(/*! ./components/ExampleProxyPage */ "./components/ExampleProxyPage.tsx")))));
 	}
 };
 var get = (module, getScope) => {
@@ -416,7 +419,7 @@ __webpack_require__.d(exports, {
 /******/ 				"webpack/sharing/consume/default/react-i18next/react-i18next",
 /******/ 				"webpack/sharing/consume/default/@patternfly/react-core/@patternfly/react-core"
 /******/ 			],
-/******/ 			"components_dashboard_tsx": [
+/******/ 			"webpack_sharing_consume_default_openshift-console_dynamic-plugin-sdk_openshift-console_dynami-71dd47": [
 /******/ 				"webpack/sharing/consume/default/@openshift-console/dynamic-plugin-sdk/@openshift-console/dynamic-plugin-sdk"
 /******/ 			],
 /******/ 			"webpack_sharing_consume_default_react_react-webpack_sharing_consume_default_react_react-webpa-dbb91f": [
@@ -477,7 +480,7 @@ __webpack_require__.d(exports, {
 /******/ 					if(installedChunkData) {
 /******/ 						promises.push(installedChunkData[2]);
 /******/ 					} else {
-/******/ 						if(!/^webpack_sharing_consume_default_(react_react\-(_6301|_83cc|webpack_sharing_consume_default_react_react\-webpa\-dbb91f)|patternfly_react\-core_patternfly_react\-core\-webpack_sharing_c\-17d5ac)$/.test(chunkId)) {
+/******/ 						if(!/^webpack_sharing_consume_default_(react_react\-(_6301|_83cc|webpack_sharing_consume_default_react_react\-webpa\-dbb91f)|openshift\-console_dynamic\-plugin\-sdk_openshift\-console_dynami\-71dd47|patternfly_react\-core_patternfly_react\-core\-webpack_sharing_c\-17d5ac)$/.test(chunkId)) {
 /******/ 							// setup Promise in chunk cache
 /******/ 							var promise = new Promise((resolve, reject) => (installedChunkData = installedChunks[chunkId] = [resolve, reject]));
 /******/ 							promises.push(installedChunkData[2] = promise);
