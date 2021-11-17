@@ -51,7 +51,7 @@ const ExampleProxyResponse = () => {
 const ExampleProxyResponseNew = () => {
     const [data, setData] = react__WEBPACK_IMPORTED_MODULE_0__.useState();
     react__WEBPACK_IMPORTED_MODULE_0__.useEffect(() => {
-        (0,_openshift_console_dynamic_plugin_sdk__WEBPACK_IMPORTED_MODULE_1__.consoleFetchJSON)('/api/proxy/namespace/open-cluster-management-observability/service/observability-thanos-query-new:9099/api/v1/rules')
+        (0,_openshift_console_dynamic_plugin_sdk__WEBPACK_IMPORTED_MODULE_1__.consoleFetchJSON)('/api/proxy/namespace/open-cluster-management-observability/service/rbac-query-proxy:8443/api/v1/rules')
             .then((response) => {
             setData(response);
         })

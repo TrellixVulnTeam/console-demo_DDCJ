@@ -23,7 +23,7 @@ const config: webpack.Configuration = {
     writeToDisk: true,
   },
   resolve: {
-    extensions: ['.ts', '.tsx', '.js', '.jsx'],
+    extensions: ['.ts', '.tsx', '.js', '.jsx', '.mjs'],
   },
   module: {
     rules: [

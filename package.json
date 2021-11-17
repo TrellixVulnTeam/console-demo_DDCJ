@@ -10,7 +10,8 @@
     "build-dev": "yarn clean && yarn ts-node ./node_modules/.bin/webpack",
     "dev": "yarn clean && yarn ts-node ./node_modules/.bin/webpack serve",
     "http-server": "./http-server.sh ./dist",
-    "ts-node": "ts-node -O '{\"module\":\"commonjs\"}' -I '/node_modules/(?!(@console)/)/'"
+    "ts-node": "ts-node -O '{\"module\":\"commonjs\"}' -I '/node_modules/(?!(@console)/)/'",
+    "test": "concurrently --kill-others-on-fail npm:jest npm:eslint npm:prettier npm:tsc:noEmit -c green,blue,cyan,magenta"
   },
   "dependencies": {
     "@patternfly/patternfly": "4.103.6",

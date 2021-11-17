@@ -1,9 +1,13 @@
 import * as React from 'react';
-import { HorizontalNav } from '@openshift-console/dynamic-plugin-sdk';
 import { useTranslation } from 'react-i18next';
-import { Grid, GridItem } from '@patternfly/react-core';
-import { StatusCard } from './status-card';
+import { Helmet } from 'react-helmet';
 import { RouteComponentProps } from 'react-router';
+
+import { HorizontalNav } from '@openshift-console/dynamic-plugin-sdk';
+import { Grid, GridItem } from '@patternfly/react-core';
+
+import { StatusCard } from './status-card';
+import PageHeading from './page-heading';
 
 type ODFDashboardPageProps = {
     history: RouteComponentProps['history'];
@@ -30,6 +34,7 @@ export const ODFDashboard: React.FC = () => {
 
 const ODFDashboardPage: React.FC<ODFDashboardPageProps> = (props) => {
   const { t } = useTranslation('plugin__console-demo');
+  const title = t('OpenShift Data Foundation');
   const pages = [
     {
       href: '',
@@ -40,6 +45,10 @@ const ODFDashboardPage: React.FC<ODFDashboardPageProps> = (props) => {
 
   return (
     <>
+      <Helmet>
+        <title>{title}</title>
+      </Helmet>
+      <PageHeading />
       <HorizontalNav
         pages={pages}
       />
