@@ -7,6 +7,8 @@ import { HorizontalNav } from '@openshift-console/dynamic-plugin-sdk';
 import { Grid, GridItem } from '@patternfly/react-core';
 
 import { StatusCard } from './status-card';
+import { SystemCapacityCard }  from './capacity-card';
+import { PerformanceCard }  from './performance-card';
 import PageHeading from './page-heading';
 
 type ODFDashboardPageProps = {
@@ -16,8 +18,14 @@ type ODFDashboardPageProps = {
   
 const UpperSection: React.FC = () => (
   <Grid hasGutter>
-    <GridItem md={8} sm={12}>
+    <GridItem md={4} sm={12}>
       <StatusCard/>
+    </GridItem>
+    <GridItem md={8} sm={12}>
+      <SystemCapacityCard />
+    </GridItem>
+    <GridItem md={12} sm={12}>
+      <PerformanceCard />
     </GridItem>
   </Grid>
 );

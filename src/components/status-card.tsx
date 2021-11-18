@@ -1,11 +1,8 @@
 import * as React from 'react';
 import * as _ from 'lodash';
 
-import {
-    DashboardCard
-} from '@openshift-console/dynamic-plugin-sdk-internal';
 
-/*import { useTranslation } from 'react-i18next';
+import { useTranslation } from 'react-i18next';
 
 import { Gallery, GalleryItem, pluralize } from '@patternfly/react-core';
 
@@ -24,11 +21,11 @@ import {
 
 import { HealthState } from '../utils/constants';
 import { getAcmThanosEnpoint } from '../utils/query';
-import { useURLPoll } from './common/use-url-poll-hook'; */
+import { useURLPoll } from './common/use-url-poll-hook';
 
 
 export const StatusCard: React.FC = () => {
-  /*const { t } = useTranslation('plugin__console-demo');
+  const { t } = useTranslation('plugin__console-demo');
    const healthStateMap = (state: string) => {
     switch (state) {
       case '0':
@@ -42,8 +39,8 @@ export const StatusCard: React.FC = () => {
     }
   };
 
-  const [healthData, healthError, healthLoading] = useURLPoll<PrometheusResponse>(`${getAcmThanosEnpoint()}?query=node_network_up`);
-
+  const [healthData, healthError, healthLoading] = useURLPoll<PrometheusResponse>(`${getAcmThanosEnpoint()}?query=odf_system_health_status{managedBy!=""}`);
+  
   const parsedHealthData =
   !healthError && !healthLoading
     ? healthData.data.result.reduce((acc, curr) => {
@@ -63,12 +60,11 @@ const healthySystems = parsedHealthData.filter(
 
 const unHealthySystems = parsedHealthData.filter(
     (item) => item.rawHealthData !== '0'
-); */
+);
 
 
   return (
-      <DashboardCard>sds</DashboardCard>
-   /* <DashboardCard className="odfDashboard-card--height">
+   <DashboardCard className="odfDashboard-card--height">
       <DashboardCardHeader>
         <DashboardCardTitle>{t('Status')}</DashboardCardTitle>
       </DashboardCardHeader>
@@ -92,6 +88,6 @@ const unHealthySystems = parsedHealthData.filter(
           </Gallery>
         </HealthBody>
       </DashboardCardBody>
-    </DashboardCard>*/
+    </DashboardCard>
   );
 };

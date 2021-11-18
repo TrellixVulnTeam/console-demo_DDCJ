@@ -8,22 +8,6 @@
   },
   "extensions": [
     {
-      "type": "console.perspective",
-      "properties": {
-        "id": "acm",
-        "name": "All Clusters",
-        "icon": {
-          "$codeRef": "perspective.icon"
-        },
-        "landingPageURL": {
-          "$codeRef": "perspective.getLandingPageURL"
-        },
-        "importRedirectURL": {
-          "$codeRef": "perspective.getImportRedirectURL"
-        }
-      }
-    },
-    {
       "type": "console.navigation/section",
       "properties": {
         "id": "data-service-section",
@@ -38,46 +22,16 @@
         "perspective": "acm",
         "section": "data-service-section",
         "name": "Data foundation",
-        "href": "/dashboard"
-      }
-    },
-    {
-      "type": "console.navigation/href",
-      "properties": {
-        "id": "dr-data-service-section",
-        "perspective": "acm",
-        "section": "data-service-section",
-        "name": "DR service",
-        "href": "/drproxy"
-      }
-    },
-    {
-      "type": "console.page/route",
-      "properties": {
-        "path": "/all-clusters",
-        "perspective": "acm",
-        "component": {
-          "$codeRef": "exampleNavs.DynamicPage1"
-        }
+        "href": "/multicloud/infrastructure/dashboard"
       }
     },
     {
       "type": "console.page/route",
       "properties": {
         "perspective": "acm",
-        "path": "/dashboard",
+        "path": "/multicloud/infrastructure/dashboard",
         "component": {
           "$codeRef": "dashboard.default"
-        }
-      }
-    },
-    {
-      "type": "console.page/route",
-      "properties": {
-        "perspective": "acm",
-        "path": "/drproxy",
-        "component": {
-          "$codeRef": "proxypage.default"
         }
       }
     }

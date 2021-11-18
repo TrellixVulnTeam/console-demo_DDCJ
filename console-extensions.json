@@ -1,22 +1,4 @@
-/**
- * This file declares all extensions contributed by the plugin.
- *
- * Depending on extension 'type', the 'properties' object may contain code references, encoded
- * as object literals { $codeRef: string }. The '$codeRef' value should be formatted as either
- * 'moduleName.exportName' (referring to a named export) or 'moduleName' (referring to the
- * 'default' export). Only the plugin's exposed modules may be used in code references.
- */
  [
-  {
-    "type": "console.perspective",
-    "properties": {
-      "id": "acm",
-      "name": "All Clusters",
-      "icon": { "$codeRef": "perspective.icon" },
-      "landingPageURL": { "$codeRef": "perspective.getLandingPageURL" },
-      "importRedirectURL": { "$codeRef": "perspective.getImportRedirectURL" }
-    }
-  },
   {
     "type": "console.navigation/section",
     "properties": {
@@ -32,41 +14,15 @@
       "perspective": "acm",
       "section": "data-service-section",
       "name": "Data foundation",
-      "href": "/dashboard"
-    }
-  },
-  {
-    "type": "console.navigation/href",
-    "properties": {
-      "id": "dr-data-service-section",
-      "perspective": "acm",
-      "section": "data-service-section",
-      "name": "DR service",
-      "href": "/drproxy"
-    }
-  },
-  {
-    "type": "console.page/route",
-    "properties": {
-      "path": "/all-clusters",
-      "perspective": "acm",
-      "component": { "$codeRef": "exampleNavs.DynamicPage1" }
+      "href": "/multicloud/infrastructure/dashboard"
     }
   },
   {
     "type": "console.page/route",
     "properties": {
       "perspective": "acm",
-      "path": "/dashboard",
+      "path": "/multicloud/infrastructure/dashboard",
       "component": { "$codeRef": "dashboard.default" }
     }
-  },
-    {
-      "type": "console.page/route",
-      "properties": {
-        "perspective": "acm",
-        "path": "/drproxy",
-        "component": { "$codeRef": "proxypage.default" }
-      }
   }
 ]

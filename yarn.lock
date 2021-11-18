@@ -618,10 +618,10 @@
     react-router "5.2.0"
     react-router-dom "5.2.0"
 
-"@openshift-console/dynamic-plugin-sdk-webpack@0.0.3":
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/@openshift-console/dynamic-plugin-sdk-webpack/-/dynamic-plugin-sdk-webpack-0.0.3.tgz#edc768dbdcb2d3d07d3ccb5f60c5a5a01b6293b8"
-  integrity sha512-uHQIpd+Xyyatz6HiyKkvf4JDYnUskxte+sJiYFL6csdbZyvXMgdcclGs+Epe/6clr8oP2N3IoARqV0CIHR9WOQ==
+"@openshift-console/dynamic-plugin-sdk-webpack@0.0.4":
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/@openshift-console/dynamic-plugin-sdk-webpack/-/dynamic-plugin-sdk-webpack-0.0.4.tgz#9dfc10bb0465215a6285c7e5072db67de51ccdce"
+  integrity sha512-u3Q+Cc+z/g8MUUPYVxL0s91ZMdqpgPPsDvSR4pee8P9l7PGAR93dyor+MIwOeRTu27VNefgAfvzeuN6w09cK3g==
   dependencies:
     ajv "^6.12.3"
     chalk "2.4.x"
@@ -630,7 +630,7 @@
     lodash "^4.17.21"
     read-pkg "5.x"
     semver "6.x"
-    webpack "^5.53.0"
+    webpack "^5.62.1"
 
 "@openshift-console/dynamic-plugin-sdk@0.0.3":
   version "0.0.3"
@@ -10610,7 +10610,7 @@ webpack-sources@^3.2.0:
   resolved "https://registry.yarnpkg.com/webpack-sources/-/webpack-sources-3.2.1.tgz#251a7d9720d75ada1469ca07dbb62f3641a05b6d"
   integrity sha512-t6BMVLQ0AkjBOoRTZgqrWm7xbXMBzD+XDq2EZ96+vMfn3qKgsvdXZhbPZ4ElUOpdv4u+iiGe+w3+J75iy/bYGA==
 
-webpack@^5.53.0, webpack@^5.62.1:
+webpack@^5.62.1:
   version "5.64.0"
   resolved "https://registry.yarnpkg.com/webpack/-/webpack-5.64.0.tgz#db3e12546f755930ccc9e0e21ba660871940c615"
   integrity sha512-UclnN24m054HaPC45nmDEosX6yXWD+UGC12YtUs5i356DleAUGMDC9LBAw37xRRfgPKYIdCYjGA7RZ1AA+ZnGg==
